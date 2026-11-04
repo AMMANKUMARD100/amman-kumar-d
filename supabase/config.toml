@@ -1,0 +1,9 @@
+project_id = "amman-portfolio"
+[functions.contact]
+verify_jwt = false
+[functions.upload-file]
+verify_jwt = false
+[functions.portfolio-file]
+verify_jwt = false
+# upload-file and admin deletion verify the bearer session; portfolio-file signs only published rows.
+# contact is public, with Turnstile, origin validation, and server-side rate limiting.
